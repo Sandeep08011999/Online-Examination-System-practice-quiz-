@@ -1,0 +1,101 @@
+<html >
+<head>
+<title>Home-Page</title>
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript">
+function clearText(field)
+{
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+</head>
+<body>
+<div id="templatemo_header_wrapper">
+	<div id="templatemo_header">
+       		<div id="site_title">
+            <h1>&nbsp;&nbsp;&nbsp;&nbsp;Online Examination &nbsp;&nbsp;&nbsp;&nbsp;System </h1>
+        </div>    
+         <div id="templatemo_menu">
+            <ul>
+                <li><a href="#" class="current">Home-Page</a></li>
+				<li><a href="login.html" class="_parent">Login</a></li>
+				<li><a href="register.html" class="_parent">Register</a></li>
+            </ul>    	
+        </div> <!-- end of templatemo_menu -->
+        <div id="search_box">
+                <form action="#" method="get">
+                    <input type="text" value="Enter a keyword" name="q" size="10" id="searchfield" title="searchfield" onfocus="clearText(this)" onblur="clearText(this)" />
+                </form>
+           </div>
+    	<div class="cleaner"></div>
+    </div> <!-- end of templatemo_header -->
+</div> 
+<!-- end of templatemo_header_wrapper -->
+<div id="templatemo_content_wrapper">
+	<div id="templatemo_content">
+        <div class="content_section">
+            <h2>Practice-Paper(Quiz)</h2>
+            <div class="product_box margin_r10">
+	            <h3>Computer Fundamentals </h3>
+                <a href="it.html" target="_blank"><img src="images\it-tools.jpg" alt="product" /></a>
+              <p class="price"><a href="it.html" target="_blank">Practice Paper </a></p>
+            </div>
+            <div class="product_box margin_r10">
+	            <h3>M2-R4 Internet Technology & Web Design </h3>
+               <a href="web.html" target="_blank"><img src="images\web.jpg" alt="product" /></a>  
+              <p class="price"><a href="web.html" target="_blank">Practice Paper </a></p>
+            </div>
+            <div class="product_box ">
+	            <h3>M3-R4 Programming in ‘C’ language </h3>
+               <a href="c.html" target="_blank"><img src="images\c.png" alt="product" /></a>
+              <p class="price"><a href="c.html" target="_blank">Practice Paper </a></p>
+            </div>
+            <div class="cleaner"></div>
+        </div> 
+        <div class="cleaner_h40"></div>
+        <div class="content_section">
+		        <div class="content_section">
+            <div class="product_box margin_r10">
+	            <h3>M4.1-R4Application of .NET Technology </h3>
+                 <a href=".net.html" target="_blank"><img src="images\.net.jpg" alt="product" /></a>
+              <p class="price"><a href=".net.html" target="_blank">Practice Paper </a></p>
+            </div>
+            <div class="product_box margin_r10">
+	            <h3>M4.2-R3 Introduction to Multimedia </h3>
+                <a href="mul.html" target="_blank"><img src="images\multi.jpg" alt="product" /></a>  
+              <p class="price"><a href="mul.html" target="_blank">Practice Paper </a></p>
+            </div>
+            <div class="product_box ">
+	            <h3>M4.3-R4 Introduction to ICT Resources  </h3>
+                <a href="ict.html" target="_blank"><img src="images\ict.jpg" alt="product" /></a>
+              <p class="price"><a href="ict.html" target="_blank">Practice Paper </a></p>
+            </div>
+            <div class="cleaner"></div>
+        </div> 
+		</div>
+		<div class="cleaner_h40"></div>
+    </div> <!-- end of content -->
+    <div id="templatmeo_sidebar">
+	<div class="cleaner_h30"></div>
+        <div class="sidebar_section">
+        	<h2>Practice Paper(Quiz)</h2>
+			<div class="product_box ">
+	            <h3>CCC-Paper </h3>
+                 <a href="ccc.html" target="_blank"><img src="images\ccc.jpg" alt="product" /></a>
+              <p class="price"><a href="ccc.html" target="_blank">Practice Paper </a></p>
+            </div>
+        </div>
+		 <div class="sidebar_section">
+        	<h2>Importent-NEWS</h2>
+           <marquee direction="down" height="150" width="300" scrolldelay=50" 
+             behavior="alternate" onmouseover="this.stop();" onmouseout="this.start();">
+            <font color="" style="font-size:30px;"><b>My First website</b></font> </marquee>
+        </div>
+	</div> <!-- end of sidebar -->
+  	<div class="cleaner"></div>    
+</div> <div id="templatemo_content_wrapper_bottom"></div> <!-- end of content_wrapper -->
+ <script src="js\vendor\jquery-1.11.2.min.js"></script>
+  <script src="js\quiz.js"></script>
+</body>
+</html>

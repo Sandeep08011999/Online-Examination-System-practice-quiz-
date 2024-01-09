@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html >
+<head>
+
+<title>Course On Computer Concepts (CCC)</title>
+<!-- ************************************************************ -->
+
+ <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js-ccc/vendor/modernizr-2.8.3.min.js"></script>
+		
+		
+		<script>
+var secs;
+function countDown(secs,elem) {
+	var element = document.getElementById(elem);
+	element.innerHTML ="<h2>Time left "+secs+" seconds</h2>";
+	if(secs == 0 ) {
+		clearTimeout(timer);
+		element.innerHTML = '<h2>Countdown Complete!</h2>';
+		
+		//window.location.href="paper.html" ;
+		window.alert('Countdown Complete!') ;
+		//window.checkbox('Countdown Complete!') ;
+		
+		
+			}
+			
+		if(secs <= 0 ) {
+		clearTimeout(timer);
+		element.innerHTML = '<h2>Countdown Complete!</h2>';
+		
+		//window.location.href="paper.html" ;
+		//window.alert('Countdown Complete!') ;
+		//window.checkbox('Countdown Complete!') ;
+		
+		
+			}
+	
+	
+
+	secs--;
+	var timer = setTimeout('countDown('+secs+',"'+elem+'")',1000);
+
+}
+</script>
+		
+		
+
+
+<!-- ************************************************************ -->
+
+
+
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript">
+function clearText(field)
+{
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+</head>
+<body>
+<div id="templatemo_header_wrapper">
+
+	<div id="templatemo_header">
+    
+   		<div id="site_title">
+            <h1>Course On Computer Concepts (CCC) Quiz</h1>
+        </div>
+        
+         <div id="templatemo_menu">
+            <ul>
+                <li><a href="index.html" class="current">Back to Home</a></li>
+            </ul>    	
+        </div> <!-- end of templatemo_menu -->
+        
+        <div id="timer" >
+              <div id="status">  </div>
+               <script>countDown(600,"status");</script>  
+           </div>
+    
+    	<div class="cleaner"></div>
+    </div> <!-- end of templatemo_header -->
+
+</div> 
+<!-- end of templatemo_header_wrapper -->
+
+<div id="templatemo_content_wrapper">
+
+	<div id="templatemo_content">
+    
+    <div >
+<main >
+		 <form class="questionForm" id="q1" data-question="1">
+		    <h3>1. How many different positions can you set for drop cap? </h3>
+			<ul class="radioContainer">
+			    <li><input type="radio" name="q1" value="a" class="circle" onclick="f1(1);" />1 </li><br>
+				<li><input type="radio" name="q1" value="b" class="circle" onclick="f1(1);" />2 </li><br>
+				<li><input type="radio" name="q1" value="c" class="circle" onclick="f1(1);" />4 </li><br>
+				<li><input type="radio" name="q1" value="d" class="circle" onclick="f1(1);" />6 </li><br>
+			</ul><br>
+			<button class="c16" id="previous"> View Previous</button>
+			<button class="c16" id="submit"> Submit and Next</button><br><br>
+			<button class="c17" id="submit" onclick="f3(1);">Marked for review</button>
+			</form>
+		
+		  <form class="questionForm" id="q2" data-question="2">
+		    <h3>2.How many ways you can save a document?</h3>
+			<ul class="radioContainer">
+			    <li><input type="radio" name="q2" value="a" class="circle" onclick="f1(2);" />3 </li><br>
+				<li><input type="radio" name="q2" value="b" class="circle" onclick="f1(2);" />4 </li><br>
+				<li><input type="radio" name="q2" value="c" class="circle" onclick="f1(2);" />5 </li><br>
+				<li><input type="radio" name="q2" value="d" class="circle" onclick="f1(2);" />6 </li><br>
+			</ul><br>
+			<button class="c16" id="previous"> View Previous</button>
+			<button class="c16" id="submit"> Submit and Next</button><br><br>
+			<button class="c17" id="submit" onclick="f3(2);">Marked for review</button>
+			</form>
+		
+		 <form class="questionForm" id="q3" data-question="3">
+		    <h3>3.What is the maximum number of lines you can set for lines to drop box? </h3>
+			<ul class="radioContainer">
+			    <li><input type="radio" name="q3" value="a" class="circle" onclick="f1(3);" /> 3</li><br>
+				<li><input type="radio" name="q3" value="b" class="circle" onclick="f1(3);" />5 </li><br>
+				<li><input type="radio" name="q3" value="c" class="circle" onclick="f1(3);" /> 10</li><br>
+				<li><input type="radio" name="q3" value="d" class="circle" onclick="f1(3);" />15 </li><br>
+			</ul><br>
+			<button class="c16" id="previous"> View Previous</button>
+			<button class="c16" id="submit"> Submit and Next</button><br><br>
+			<button class="c17" id="submit" onclick="f3(3);">Marked for review</button>
+			
+		</form>
+		
+		 <form class="questionForm" id="q4" data-question="4">
+		    <h3>4.Single spacing in MS-WORD document causes ____ point line spacing? </h3>
+			<ul class="radioContainer">
+			    <li><input type="radio" name="q4" value="a" class="circle" onclick="f1(4);" />10 </li><br>
+				<li><input type="radio" name="q4" value="b" class="circle" onclick="f1(4);" /> 12</li><br>
+				<li><input type="radio" name="q4" value="c" class="circle" onclick="f1(4);" />14 </li><br>
+				<li><input type="radio" name="q4" value="d" class="circle" onclick="f1(4);" /> 16</li><br>
+			</ul><br>
+			<button class="c16" id="previous"> View Previous</button>
+			<button class="c16" id="submit"> Submit and Next</button><br><br>
+			<button class="c17" id="submit" onclick="f3(4);">Marked for review</button>
+		</form>
+		
+		 <form class="questionForm" id="q5" data-question="5">
+		    <h3>5.What is the default number of lines to drop for drop cap </h3>
+			<ul class="radioContainer">
+			    <li><input type="radio" name="q5" value="a" class="circle" onclick="f1(5);" /> 3</li><br>
+				<li><input type="radio" name="q5" value="b" class="circle" onclick="f1(5);" />10 </li><br>
+				<li><input type="radio" name="q5" value="c" class="circle" onclick="f1(5);" />15 </li><br>
+				<li><input type="radio" name="q5" value="d" class="circle" onclick="f1(5);" /> 20</li><br>
+			</ul><br>
+			<button class="c16" id="previous"> View Previous</button>
+			<button class="c16" id="submit"> Submit and Next</button><br><br>
+			<button class="c17" id="submit" onclick="f3(5);">Marked for review</button>
+		</form>
+		
+		<form class="questionForm" id="q6" data-question="6">
+		    <h3>6.What is the maximum number of lines you can set for a drop cap?</h3>
+			<ul class="radioContainer">
+			    <li><input type="radio" name="q6" value="a" class="circle" onclick="f1(6);" />3  </li><br>
+				<li><input type="radio" name="q6" value="b" class="circle" onclick="f1(6);" /> 10 </li><br>
+				<li><input type="radio" name="q6" value="c" class="circle" onclick="f1(6);" />15  </li><br>
+				<li><input type="radio" name="q6" value="d" class="circle" onclick="f1(6);" />20  </li><br>
+			</ul><br>
+			<button class="c16" id="previous"> View Previous</button>
+			<button class="c16" id="submit"> Submit and Next</button><br><br>
+			<button class="c17" id="submit" onclick="f3(6);">Marked for review</button>
+		</form>
+		
+		<form class="questionForm" id="q7" data-question="7">
+		    <h3>7. How many columns can you insert in a word document in maximum? </h3>
+			<ul class="radioContainer">
+			    <li><input type="radio" name="q7" value="a" class="circle" onclick="f1(7);" />35  </li><br>
+				<li><input type="radio" name="q7" value="b" class="circle" onclick="f1(7);" />45  </li><br>
+				<li><input type="radio" name="q7" value="c" class="circle" onclick="f1(7);" />55  </li><br>
+				<li><input type="radio" name="q7" value="d" class="circle" onclick="f1(7);" /> 65 </li><br>
+			</ul><br>
+			<button class="c16" id="previous"> View Previous</button>
+			<button class="c16" id="submit"> Submit and Next</button><br><br>
+			<button class="c17" id="submit" onclick="f3(7);">Marked for review</button>
+		</form>
+		
+		<form class="questionForm" id="q8" data-question="8">
+		    <h3>8.In a document what is the maximum number of columns that can be inserted in MS Word Table? </h3>
+			<ul class="radioContainer">
+			    <li><input type="radio" name="q8" value="a" class="circle" onclick="f1(8);" /> 35 </li><br>
+				<li><input type="radio" name="q8" value="b" class="circle" onclick="f1(8);" /> 15 </li><br>
+				<li><input type="radio" name="q8" value="c" class="circle" onclick="f1(8);" /> 63 </li><br>
+				<li><input type="radio" name="q8" value="d" class="circle" onclick="f1(8);" /> 65 </li><br>
+			</ul><br>
+			<button class="c16" id="previous"> View Previous</button>
+			<button class="c16" id="submit"> Submit and Next</button><br><br>
+			<button class="c17" id="submit" onclick="f3(8);">Marked for review</button>
+		</form>
+		
+		<form class="questionForm" id="q9" data-question="9">
+		    <h3>9.What is the maximum scale percentage available in Scale drop down box? </h3>
+			<ul class="radioContainer">
+			    <li><input type="radio" name="q9" value="a" class="circle" onclick="f1(9);" />500  </li><br>
+				<li><input type="radio" name="q9" value="b" class="circle" onclick="f1(9);" />200  </li><br>
+				<li><input type="radio" name="q9" value="c" class="circle" onclick="f1(9);" /> 100 </li><br>
+				<li><input type="radio" name="q9" value="d" class="circle" onclick="f1(9);" />90  </li><br>
+			</ul><br>
+			<button class="c16" id="previous"> View Previous</button>
+			<button class="c16" id="submit"> Submit and Next</button><br><br>
+			<button class="c17" id="submit" onclick="f3(9);">Marked for review</button>
+		</form>
+		
+		<form class="questionForm" id="q10" data-question="10">
+		    <h3>10.What is the maximum font size you can apply for any character </h3>
+			<ul class="radioContainer">
+			    <li><input type="radio" name="q10" value="a" class="circle" onclick="f1(10);" /> 163 </li><br>
+				<li><input type="radio" name="q10" value="b" class="circle" onclick="f1(10);" /> 1638 </li><br>
+				<li><input type="radio" name="q10" value="c" class="circle" onclick="f1(10);" /> 16038 </li><br>
+				<li><input type="radio" name="q10" value="d" class="circle" onclick="f1(10);" /> None of the above </li><<br>
+			</ul><br>
+			<button class="c16" id="previous"> View Previous</button>
+			<button class="c16" id="submit"> Submit and Next</button><br><br>
+			<button class="c17" id="submit" onclick="f3(10);">Marked for review</button>
+		</form>
+		
+		
+		
+		
+		
+		<div id=""></div>
+	</main>
+</div>
+    
+
+    </div> <!-- end of content -->
+
+    
+    <div id="templatmeo_sidebar">
+    
+    	
+       		
+            <h2>Model_Paper</h2>
+       	
+       	 <div id="option">
+<table align="center">
+<tr>
+<td>
+<label>
+  <input type="radio" name="s1" id="a1" onclick="f2(1);" class="c13" class="c14"  />
+  <span >1</span>
+</label>
+</td>
+<td>
+<label>
+  <input type="radio" name="s1" id="a2" onclick="f2(2);" class="c13" class="c14" />
+  <span >2</span>
+</label>
+</td>
+<td>
+<label>
+  <input type="radio" name="s1" id="a3" onclick="f2(3);" class="c13" class="c14" />
+  <span>3</span>
+</label>
+</td>
+<td>
+<label>
+  <input type="radio" name="s1" id="a4" onclick="f2(4);" class="c13" class="c14" />
+  <span>4</span>
+</label>
+</td>
+<td>
+<label>
+  <input type="radio" name="s1" id="a5" onclick="f2(5);" class="c13" class="c14" />
+  <span>5</span>
+</label>
+</td>
+</tr>
+<tr>
+<td>
+<label>
+  <input type="radio" name="s1" id="a6" onclick="f2(6);" class="c13" class="c14"  />
+  <span >6</span>
+</label>
+</td>
+<td>
+<label>
+  <input type="radio" name="s1" id="a7" onclick="f2(7);" class="c13" class="c14" />
+  <span >7</span>
+</label>
+</td>
+<td>
+<label>
+  <input type="radio" name="s1" id="a8" onclick="f2(8);" class="c13" class="c14" />
+  <span>8</span>
+</label>
+</td>
+<td>
+<label>
+  <input type="radio" name="s1" id="a9" onclick="f2(9);" class="c13" class="c14" />
+  <span>9</span>
+</label>
+</td>
+<td>
+<label>
+  <input type="radio" name="s1" id="a10" onclick="f2(10);" class="c13" class="c14" />
+  <span>10</span>
+</label>
+</td>
+</tr>
+
+</table>
+</div>	
+             
+       <center><button class="c15" id="submit" onclick="f4();"> FINISH </button></center> 
+	   <h3 id="results"></h3> 
+        
+        <div class="cleaner_h30"></div>
+        <div class="sidebar_section">
+        
+        	
+			        
+        </div>
+
+	</div> <!-- end of sidebar -->
+    
+  	<div class="cleaner"></div>    
+
+</div> <div id="templatemo_content_wrapper_bottom"></div> <!-- end of content_wrapper -->
+
+<div id="templatemo_footer">
+
+<div class="product_box margin_r10">
+        
+            
+</div></div>
+  <script src="js-ccc\vendor\jquery-1.11.2.min.js"></script>
+  
+  <script src="js-ccc\quiz.js"></script>
+
+</body>
+</html>

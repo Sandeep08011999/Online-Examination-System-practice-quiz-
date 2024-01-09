@@ -1,0 +1,274 @@
+<html >
+<head>
+<title>Computer Fundamentals</title>
+<!-- ************************************************************ -->
+ <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js-it/vendor/modernizr-2.8.3.min.js"></script>
+		<script>
+var secs;
+function countDown(secs,elem) {
+	var element = document.getElementById(elem);
+	element.innerHTML ="<h2>Time left "+secs+" seconds</h2>";
+	if(secs == 0 ) {
+		clearTimeout(timer);
+		element.innerHTML = '<h2>Countdown Complete!</h2>';
+		//window.location.href="paper.html" ;
+		window.alert('Countdown Complete!') ;
+		//window.checkbox('Countdown Complete!') ;
+			}
+		if(secs <= 0 ) {
+		clearTimeout(timer);
+		element.innerHTML = '<h2>Countdown Complete!</h2>';		
+			}
+	secs--;
+	var timer = setTimeout('countDown('+secs+',"'+elem+'")',1000);
+}
+</script>
+<!-- ************************************************************ -->
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript">
+function clearText(field)
+{
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+</head>
+<body>
+<div id="templatemo_header_wrapper">
+	<div id="templatemo_header">
+   		<div id="site_title">
+            <h1>Computer Fundamentals Quiz</h1>
+        </div>
+         <div id="templatemo_menu">
+            <ul>
+                <li><a href="index.html" class="current">Back to Home</a></li>
+            </ul>    	
+        </div> <!-- end of templatemo_menu -->
+        <div id="timer" >
+              <div id="status">  </div>
+               <script>countDown(600,"status");</script>  
+           </div>
+    	<div class="cleaner"></div>
+    </div> <!-- end of templatemo_header -->
+</div> 
+<!-- end of templatemo_header_wrapper -->
+<div id="templatemo_content_wrapper">
+	<div id="templatemo_content">
+    <div >
+<main >
+		 <form class="questionForm" id="q1" data-question="1">
+		    <h3>1. Which of the following languages is more suited to a structured program? </h3>
+			<ul class="radioContainer">
+			    <li><input type="radio" name="q1" value="a" class="circle" onclick="f1(1);" />PL/1 </li><br>
+				<li><input type="radio" name="q1" value="b" class="circle" onclick="f1(1);" />FORTRAN </li><br>
+				<li><input type="radio" name="q1" value="c" class="circle" onclick="f1(1);" />BASIC </li><br>
+				<li><input type="radio" name="q1" value="d" class="circle" onclick="f1(1);" />PASCAL	 </li><br>
+			</ul><br>
+			<button class="c16" id="previous"> View Previous</button>
+			<button class="c16" id="submit"> Submit and Next</button><br><br>
+			<button class="c17" id="submit" onclick="f3(1);">Marked for review</button>
+			</form>
+		  <form class="questionForm" id="q2" data-question="2">
+		    <h3>2.A computer assisted method for the recording and analyzing of existing or hypothetical systems is</h3>
+			<ul class="radioContainer">
+			    <li><input type="radio" name="q2" value="a" class="circle" onclick="f1(2);" />Data transmission </li><br>
+				<li><input type="radio" name="q2" value="b" class="circle" onclick="f1(2);" />Data flow </li><br>
+				<li><input type="radio" name="q2" value="c" class="circle" onclick="f1(2);" />Data capture </li><br>
+				<li><input type="radio" name="q2" value="d" class="circle" onclick="f1(2);" />Data processing </li><br>
+			</ul><br>
+			<button class="c16" id="previous"> View Previous</button>
+			<button class="c16" id="submit"> Submit and Next</button><br><br>
+			<button class="c17" id="submit" onclick="f3(2);">Marked for review</button>
+			</form>
+		 <form class="questionForm" id="q3" data-question="3">
+		    <h3>3.The brain of any computer system is </h3>
+			<ul class="radioContainer">
+			    <li><input type="radio" name="q3" value="a" class="circle" onclick="f1(3);" /> ALU</li><br>
+				<li><input type="radio" name="q3" value="b" class="circle" onclick="f1(3);" />Memory </li><br>
+				<li><input type="radio" name="q3" value="c" class="circle" onclick="f1(3);" /> CPU</li><br>
+				<li><input type="radio" name="q3" value="d" class="circle" onclick="f1(3);" />Control unit </li><br>
+			</ul><br>
+			<button class="c16" id="previous"> View Previous</button>
+			<button class="c16" id="submit"> Submit and Next</button><br><br>
+			<button class="c17" id="submit" onclick="f3(3);">Marked for review</button>
+		</form>
+		 <form class="questionForm" id="q4" data-question="4">
+		    <h3>4.What difference does the 5th generation computer have from other generation computers? </h3>
+			<ul class="radioContainer">
+			    <li><input type="radio" name="q4" value="a" class="circle" onclick="f1(4);" />Technological advancement </li><br>
+				<li><input type="radio" name="q4" value="b" class="circle" onclick="f1(4);" /> Scientific code</li><br>
+				<li><input type="radio" name="q4" value="c" class="circle" onclick="f1(4);" />Object Oriented Programming </li><br>
+				<li><input type="radio" name="q4" value="d" class="circle" onclick="f1(4);" /> All of the above</li><br>
+			</ul><br>
+			<button class="c16" id="previous"> View Previous</button>
+			<button class="c16" id="submit"> Submit and Next</button><br><br>
+			<button class="c17" id="submit" onclick="f3(4);">Marked for review</button>
+		</form>
+		 <form class="questionForm" id="q5" data-question="5">
+		    <h3>5.Which of the following computer language is used for artificial intelligence? </h3>
+			<ul class="radioContainer">
+			    <li><input type="radio" name="q5" value="a" class="circle" onclick="f1(5);" /> FORTRAN</li><br>
+				<li><input type="radio" name="q5" value="b" class="circle" onclick="f1(5);" />PROLOG </li><br>
+				<li><input type="radio" name="q5" value="c" class="circle" onclick="f1(5);" />C </li><br>
+				<li><input type="radio" name="q5" value="d" class="circle" onclick="f1(5);" /> COBOL</li><br>
+			</ul><br>
+			<button class="c16" id="previous"> View Previous</button>
+			<button class="c16" id="submit"> Submit and Next</button><br><br>
+			<button class="c17" id="submit" onclick="f3(5);">Marked for review</button>
+		</form>
+		<form class="questionForm" id="q6" data-question="6">
+		    <h3>6.The tracks on a disk which can be accessed without repositioning the R/W heads is</h3>
+			<ul class="radioContainer">
+			    <li><input type="radio" name="q6" value="a" class="circle" onclick="f1(6);" />Surface  </li><br>
+				<li><input type="radio" name="q6" value="b" class="circle" onclick="f1(6);" /> Cylinder </li><br>
+				<li><input type="radio" name="q6" value="c" class="circle" onclick="f1(6);" />Cluster  </li><br>
+				<li><input type="radio" name="q6" value="d" class="circle" onclick="f1(6);" />All of the above  </li><br>
+			</ul><br>
+			<button class="c16" id="previous"> View Previous</button>
+			<button class="c16" id="submit"> Submit and Next</button><br><br>
+			<button class="c17" id="submit" onclick="f3(6);">Marked for review</button>
+		</form>
+		<form class="questionForm" id="q7" data-question="7">
+		    <h3>7. Which of the following is the 1's complement of 10? </h3>
+			<ul class="radioContainer">
+			    <li><input type="radio" name="q7" value="a" class="circle" onclick="f1(7);" />01  </li><br>
+				<li><input type="radio" name="q7" value="b" class="circle" onclick="f1(7);" />110 </li><br>
+				<li><input type="radio" name="q7" value="c" class="circle" onclick="f1(7);" />11 </li><br>
+				<li><input type="radio" name="q7" value="d" class="circle" onclick="f1(7);" /> 10 </li><br>
+			</ul><br>
+			<button class="c16" id="previous"> View Previous</button>
+			<button class="c16" id="submit"> Submit and Next</button><br><br>
+			<button class="c17" id="submit" onclick="f3(7);">Marked for review</button>
+		</form>
+		<form class="questionForm" id="q8" data-question="8">
+		    <h3>8.A section of code to which control is transferred when a processor is interrupted is known as </h3>
+			<ul class="radioContainer">
+			    <li><input type="radio" name="q8" value="a" class="circle" onclick="f1(8);" /> M </li><br>
+				<li><input type="radio" name="q8" value="b" class="circle" onclick="f1(8);" /> SVC </li><br>
+				<li><input type="radio" name="q8" value="c" class="circle" onclick="f1(8);" /> IP</li><br>
+				<li><input type="radio" name="q8" value="d" class="circle" onclick="f1(8);" /> MDR </li><br>
+			</ul><br>
+			<button class="c16" id="previous"> View Previous</button>
+			<button class="c16" id="submit"> Submit and Next</button><br><br>
+			<button class="c17" id="submit" onclick="f3(8);">Marked for review</button>
+		</form>
+		<form class="questionForm" id="q9" data-question="9">
+		    <h3>9.Which part interprets program instructions and initiate control operations. </h3>
+			<ul class="radioContainer">
+			    <li><input type="radio" name="q9" value="a" class="circle" onclick="f1(9);" />	Input  </li><br>
+				<li><input type="radio" name="q9" value="b" class="circle" onclick="f1(9);" />Storage unit  </li><br>
+				<li><input type="radio" name="q9" value="c" class="circle" onclick="f1(9);" /> Logic unit </li><br>
+				<li><input type="radio" name="q9" value="d" class="circle" onclick="f1(9);" />Control unit  </li><br>
+			</ul><br>
+			<button class="c16" id="previous"> View Previous</button>
+			<button class="c16" id="submit"> Submit and Next</button><br><br>
+			<button class="c17" id="submit" onclick="f3(9);">Marked for review</button>
+		</form>
+		<form class="questionForm" id="q10" data-question="10">
+		    <h3>10.The binary system uses powers of </h3>
+			<ul class="radioContainer">
+			    <li><input type="radio" name="q10" value="a" class="circle" onclick="f1(10);" /> 2 </li><br>
+				<li><input type="radio" name="q10" value="b" class="circle" onclick="f1(10);" /> 10 </li><br>
+				<li><input type="radio" name="q10" value="c" class="circle" onclick="f1(10);" /> 8 </li><br>
+				<li><input type="radio" name="q10" value="d" class="circle" onclick="f1(10);" /> 16 </li><br>
+			</ul><br>
+			<button class="c16" id="previous"> View Previous</button>
+			<button class="c16" id="submit"> Submit and Next</button><br><br>
+			<button class="c17" id="submit" onclick="f3(10);">Marked for review</button>
+		</form>
+		<div id=""></div>
+	</main>
+</div>
+    </div> <!-- end of content -->
+    <div id="templatmeo_sidebar">
+            <h2>Model_Paper</h2>
+       	 <div id="option">
+<table align="center">
+<tr>
+<td>
+<label>
+  <input type="radio" name="s1" id="a1" onclick="f2(1);" class="c13" class="c14"  />
+  <span >1</span>
+</label>
+</td>
+<td>
+<label>
+  <input type="radio" name="s1" id="a2" onclick="f2(2);" class="c13" class="c14" />
+  <span >2</span>
+</label>
+</td>
+<td>
+<label>
+  <input type="radio" name="s1" id="a3" onclick="f2(3);" class="c13" class="c14" />
+  <span>3</span>
+</label>
+</td>
+<td>
+<label>
+  <input type="radio" name="s1" id="a4" onclick="f2(4);" class="c13" class="c14" />
+  <span>4</span>
+</label>
+</td>
+<td>
+<label>
+  <input type="radio" name="s1" id="a5" onclick="f2(5);" class="c13" class="c14" />
+  <span>5</span>
+</label>
+</td>
+</tr>
+<tr>
+<td>
+<label>
+  <input type="radio" name="s1" id="a6" onclick="f2(6);" class="c13" class="c14"  />
+  <span >6</span>
+</label>
+</td>
+<td>
+<label>
+  <input type="radio" name="s1" id="a7" onclick="f2(7);" class="c13" class="c14" />
+  <span >7</span>
+</label>
+</td>
+<td>
+<label>
+  <input type="radio" name="s1" id="a8" onclick="f2(8);" class="c13" class="c14" />
+  <span>8</span>
+</label>
+</td>
+<td>
+<label>
+  <input type="radio" name="s1" id="a9" onclick="f2(9);" class="c13" class="c14" />
+  <span>9</span>
+</label>
+</td>
+<td>
+<label>
+  <input type="radio" name="s1" id="a10" onclick="f2(10);" class="c13" class="c14" />
+  <span>10</span>
+</label>
+</td>
+</tr>
+</table>
+</div>	        
+       <center><button class="c15" id="submit" onclick="f4();"> FINISH </button></center> 
+	   <h3 id="results"></h3> 
+        <div class="cleaner_h30"></div>
+        <div class="sidebar_section">
+        </div>
+	</div> <!-- end of sidebar -->
+  	<div class="cleaner"></div>    
+</div> <div id="templatemo_content_wrapper_bottom"></div> <!-- end of content_wrapper -->
+<center><a href="itans.html" target="_blank"><button class="c15" > ANSWER </button></a></center>
+<div id="templatemo_footer">
+<div class="product_box margin_r10">
+</div></div>
+  <script src="js-it\vendor\jquery-1.11.2.min.js"></script>
+  <script src="js-it\quiz.js"></script>
+</body>
+</html>
